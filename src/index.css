@@ -1,0 +1,139 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    margin-bottom: 5rem;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+.budget-title{
+    width: 80%;
+    padding-bottom: .5rem;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    color: black;
+    
+}
+
+.card{
+    background-color:white ;
+    color: gray;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+}
+.transaction{
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color:white ;
+    color: gray;
+    margin: auto;
+    padding: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: .35rem;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+    border-radius: .5rem;
+}
+.hide-btn{
+    opacity:0;
+    pointer-events: none;
+}
+.delete{
+    position: absolute;
+    left:-4rem;
+    top:1.4rem;
+    border:none;
+    width: 4rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+.transaction:hover .hide-btn{
+    opacity: 1;
+    pointer-events: all;
+}
+.title{
+    color: black;
+}
+.title, .desc{
+    margin-bottom:.2rem;
+}
+.amount{
+    width: 100%;  
+    margin-left:auto;
+    text-align: right;
+    padding-left: 1rem;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.cash-change-holder{
+    margin-left: auto;
+    margin-top: auto;
+}
+.small{
+    font-size: 25px;
+}
+.tag{
+    background-color: rgb(224, 224, 224);
+    padding: .2rem;
+    border-radius: .15rem;
+    color: rgb(71, 71, 71);
+    font-size:13px;
+    margin: .2rem;
+}
+.green{
+    color: green;
+}
+.red{
+color: darkred;
+}
+.desc-cash{
+    margin-top: .8rem;
+}
+.entry-form input, .entry-form select, button{
+    width:80%;
+    margin: 0.1rem;
+    border:1px solid lightgray;
+    background-color: white;
+    padding: .7rem;
+}
+input:focus{
+    outline: none;
+}
+input:focus::placeholder{
+    color:transparent;
+}
+button{
+    color: white;
+    background-color: #e63946;
+}
+.explain-text{
+    color: gray;
+    margin: 0.25rem;
+}
+button:focus{
+    outline:none;
+}
